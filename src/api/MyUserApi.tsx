@@ -6,6 +6,7 @@ import { toast } from "sonner";
 //starting point for API requests
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+//creating user hooks
 //type of user
 type CreateUserRequest = {
   auth0Id: string;

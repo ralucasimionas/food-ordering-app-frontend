@@ -8,7 +8,7 @@ export type User = {
 };
 
 export type Restaurant = {
-  id: string;
+  _id: string;
   user: string;
   restaurantName: string;
   city: string;
@@ -22,7 +22,16 @@ export type Restaurant = {
 };
 
 export type MenuItem = {
-  id: string;
+  _id: string;
   name: string;
   price: number;
+};
+
+export type RestaurantSearchResponse = {
+  data: Restaurant[];
+  pagination: {
+    total: number;
+    page: number;
+    pages: number;
+  };
 };
